@@ -1,0 +1,10 @@
+# Normaliza finais de linha (os arquivos hoje misturam CRLF e LF)
+* text=auto
+
+*.cs      text eol=lf
+*.csproj  text eol=lf
+*.slnx    text eol=lf
+*.json    text eol=lf
+*.md      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf

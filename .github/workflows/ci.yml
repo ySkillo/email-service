@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # O formato .slnx exige SDK 9.0.200+; os projetos continuam em net8.0
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            9.0.x
+
+      - name: Restore
+        run: dotnet restore EmailService.slnx
+
+      - name: Build
+        run: dotnet build EmailService.slnx --no-restore -c Release
+
+      - name: Test
+        run: dotnet test EmailService.slnx --no-build -c Release --verbosity normal

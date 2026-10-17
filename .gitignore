@@ -55,3 +55,21 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# IDEs
+.idea/
+.vs/
+.vscode/
+*.user
+*.suo
+*.DotSettings.user
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local secrets / settings (never commit credentials such as SMTP passwords)
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+*.pfx
