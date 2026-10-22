@@ -9,6 +9,7 @@ public class TemplateSubjects
         EmailTemplateType.AccountOpening => "Bem-vindo! Sua conta foi criada",
         EmailTemplateType.Message => "Você recebeu uma mensagem",
         EmailTemplateType.PasswordReset => "Redefinição de senha",
+        EmailTemplateType.VerificationCode => "Seu código de verificação",
         _ => throw new ArgumentOutOfRangeException(nameof(type), type, "Template não suportado.")
     };
 }

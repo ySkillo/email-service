@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<body style="font-family: Arial, sans-serif; background:#f4f4f4; padding:20px;">
-<div style="max-width:600px; margin:auto; background:#fff; padding:30px; border-radius:8px;">
-    <h2>Olá, {{Nome}}! 🎉</h2>
-    <p>Sua conta foi criada com sucesso.</p>
-    <p>Seu e-mail de acesso: <strong>{{Email}}</strong></p>
-</div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>happychat</title>
+<style>
+@media only screen and (max-width:640px) {
+  .wrap { padding: 16px 8px !important; }
+  .px { padding-left: 20px !important; padding-right: 20px !important; }
+}
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#F4F5FB;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#F4F5FB;font-size:1px;line-height:1px;">Sua conta no happychat foi criada com sucesso!</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F4F5FB" style="background-color:#F4F5FB;">
+<tr><td align="center" class="wrap" style="padding:48px 16px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
+  <!-- Header com identidade de chat -->
+  <tr><td class="px" align="center" bgcolor="#4F46E5" style="background-color:#4F46E5;background-image:linear-gradient(135deg,#4F46E5 0%,#7C3AED 100%);border-radius:24px 24px 0 0;padding:36px 40px;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td align="center" style="background-color:rgba(255,255,255,0.15);border-radius:16px;width:56px;height:56px;font-size:26px;line-height:56px;text-align:center;">💬</td>
+    </tr></table>
+    <div style="margin-top:14px;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:-0.5px;color:#FFFFFF;">happychat</div>
+  </td></tr>
+  
+  <!-- Conteúdo Principal -->
+  <tr><td class="px" bgcolor="#FFFFFF" style="background-color:#FFFFFF;border-radius:0 0 24px 24px;padding:40px 40px 36px 40px;font-family:'Segoe UI',Helvetica,Arial,sans-serif;color:#1E293B;box-shadow:0 4px 24px rgba(0,0,0,0.03);">
+    <h1 style="margin:0 0 12px 0;font-size:24px;line-height:32px;font-weight:700;color:#0F172A;">Boas-vindas, {{Nome}}! 🎉</h1>
+    <p style="margin:0 0 24px 0;font-size:15px;line-height:24px;color:#475569;">Sua conta foi criada com sucesso. O seu espaço de conversas favorito já está pronto para uso.</p>
+    
+    <!-- Caixa de Dados -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 24px 0;"><tr>
+      <td bgcolor="#F8FAFC" style="background-color:#F8FAFC;border:1px solid #E2E8F0;border-radius:16px;padding:18px 20px;">
+        <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;color:#64748B;">E-mail de acesso</div>
+        <div style="margin-top:4px;font-size:16px;font-weight:600;color:#0F172A;word-break:break-all;">{{Email}}</div>
+      </td>
+    </tr></table>
+
+    <!-- Alerta de Segurança -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td bgcolor="#FEFCE8" style="background-color:#FEFCE8;border-left:4px solid #EAB308;border-radius:0 12px 12px 0;padding:14px 18px;font-size:13px;line-height:20px;color:#713F12;">
+        <strong>Dica de segurança:</strong> O happychat nunca pede sua senha por e-mail ou mensagens diretas.
+      </td>
+    </tr></table>
+  </td></tr>
+
+  <!-- Rodapé -->
+  <tr><td align="center" style="padding:24px 20px 0 20px;font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#94A3B8;">
+    Você recebeu este e-mail porque se cadastrou no happychat.<br>Este é um envio automático, por favor, não responda.
+  </td></tr>
+</table>
+</td></tr>
+</table>
 </body>
 </html>

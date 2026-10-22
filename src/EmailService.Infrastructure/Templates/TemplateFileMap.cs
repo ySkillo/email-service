@@ -9,6 +9,7 @@ public class TemplateFileMap
         EmailTemplateType.AccountOpening => "AccountOpening.html",
         EmailTemplateType.Message => "Message.html",
         EmailTemplateType.PasswordReset => "PasswordReset.html",
+        EmailTemplateType.VerificationCode => "VerificationCode.html",
         _ => throw new ArgumentOutOfRangeException(nameof(type), type, "Template html não suportado.")
     };
 }
