@@ -10,6 +10,7 @@ public class TemplateSubjects
         EmailTemplateType.Message => "Você recebeu uma mensagem",
         EmailTemplateType.PasswordReset => "Redefinição de senha",
         EmailTemplateType.VerificationCode => "Seu código de verificação",
+        EmailTemplateType.NewFollower => "Você tem um novo seguidor",
         _ => throw new ArgumentOutOfRangeException(nameof(type), type, "Template não suportado.")
     };
 }

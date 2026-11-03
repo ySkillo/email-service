@@ -5,5 +5,7 @@ public enum EmailTemplateType
     AccountOpening = 1,
     Message = 2,
     PasswordReset = 3,
-    VerificationCode = 4
+    VerificationCode = 4,
+    NewFollower = 5
+
 }

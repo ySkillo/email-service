@@ -10,6 +10,7 @@ public class TemplateFileMap
         EmailTemplateType.Message => "Message.html",
         EmailTemplateType.PasswordReset => "PasswordReset.html",
         EmailTemplateType.VerificationCode => "VerificationCode.html",
+        EmailTemplateType.NewFollower => "NewFollower.html",
         _ => throw new ArgumentOutOfRangeException(nameof(type), type, "Template html não suportado.")
     };
 }
